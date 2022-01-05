@@ -52,14 +52,29 @@ if(amysBirthYear === brittanisBirthYear){
 
 ////////// PROBLEM 4 //////////
 
-let temperature = 55
-let rain = true
 
 /*
   Using an if statement and a comparison operator, create code that will log a suggestion on what type of clothes one should wear for the day, based on the above temperature and rain.
   If it is 80 degrees or above, and raining, one should wear a t-shirt and take an umbrella. If it is between 60 and 80 degrees, and raining, one should wear a rain-jacket. If it is 60 degrees or below, one should wear a jacket and carry an umbrella. Come up with your own clothing suggestions based on those temperature parameters when it is not raining.
 */
+let temperature = 75
+let rain = true
 
+if(temperature <= 60 && (rain === false)){
+  console.log('Wear a jacket.')
+} else if(temperature <= 60 && (rain === true)) {
+  console.log('Wear a jacket and carry an umbrella.')
+}
+if(temperature < 80 && temperature > 60 && (rain === false)){
+  console.log('T-shirt time!.')
+} else if(temperature < 80 && temperature > 60 && (rain === true)) {
+  console.log('Wear a rain jacket.')
+}
+if(temperature >= 80  && (rain === false)){
+  console.log('wear a T-shirt.')
+} else if(temperature >= 80 && (rain === true)) {
+  console.log('Take an umbrella!')
+}
 //CODE HERE
 
 
@@ -68,7 +83,9 @@ let rain = true
 /*
   Create a for-loop that runs 10 times, and on each iteration logs the word 'hello'.
 */
-
+for(let i = 0; i < 10; i++){
+  console.log(i)
+}
 //CODE HERE
 
 
