@@ -153,8 +153,11 @@ while(score < passingScore){
 // Create a while loop that continues to run while z is greater than 0. Within the while loop, log a countdown from the value of z to 1. Once you have logged the countdown, make sure you decrement z by 1. If your code is running properly, you should see: 5,4,3,2,1,4,3,2,1,3,2,1,2,1,1.
 let z = 5
 
-while(z > 0){
-  console.log(z)
-  z--;
+while(z > 0){    //this loop reads z as long as it is greater than 0
+  for(let i = z; i > 0; i--){  //This loop lets i = z meaning it begins at 5, and decrements down to 1.
+console.log(i) //This then logs i through its first loop
+  }
+  
+  z--;  
 }
 //CODE HERE
