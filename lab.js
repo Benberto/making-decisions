@@ -58,7 +58,7 @@ if(amysBirthYear === brittanisBirthYear){
   If it is 80 degrees or above, and raining, one should wear a t-shirt and take an umbrella. If it is between 60 and 80 degrees, and raining, one should wear a rain-jacket. If it is 60 degrees or below, one should wear a jacket and carry an umbrella. Come up with your own clothing suggestions based on those temperature parameters when it is not raining.
 */
 let temperature = 75
-let rain = true
+let rain = false
 
 if(temperature <= 60 && (rain === false)){
   console.log('Wear a jacket.')
@@ -110,15 +110,21 @@ for(let i = 1; i < 20; i++){
 }
 //CODE HERE
 
-let score = 0
-let passingScore = 7
+
 
 ////////// PROBLEM 8 //////////
 
 /*
   Create a while-loop that logs "Your score is not high enough" while the score variable above is below passingScore. In each iteration of the loop, increase the score by one. If your code is successful, you will see your logged statement 7 times.
 */
+let score = 0
+let passingScore = 7
 
+while(score < passingScore){
+  console.log("Your score is not high enough")
+  score++;
+
+}
 //CODE HERE
 
 ////////// INTERMEDIATE PROBLEMS //////////
@@ -143,7 +149,12 @@ let passingScore = 7
 
 ////////// PROBLEM 11 //////////
 
-let z = 5
-// Create a while loop that continues to run while z is greater than 0. Within the while loop, log a countdown from the value of z to 1. Once you have logged the countdown, make sure you decrement z by 1. If your code is running properly, you should see: 5,4,3,2,1,4,3,2,1,3,2,1,2,1,1.
 
+// Create a while loop that continues to run while z is greater than 0. Within the while loop, log a countdown from the value of z to 1. Once you have logged the countdown, make sure you decrement z by 1. If your code is running properly, you should see: 5,4,3,2,1,4,3,2,1,3,2,1,2,1,1.
+let z = 5
+
+while(z > 0){
+  console.log(z)
+  z--;
+}
 //CODE HERE
